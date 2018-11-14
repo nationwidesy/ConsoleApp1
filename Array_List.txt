@@ -1,0 +1,8 @@
+List:
+.Count
+.Add(i)
+.ElementAt(i)
+.Average()
+.Max()
+.Min()
+.RemoveAt(i)

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9519DE08-AF5E-4C07-B670-782847C8FC20}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleApp1</RootNamespace>
+    <AssemblyName>ConsoleApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClassLibrary1">
+      <HintPath>..\..\ClassLibrary1\ClassLibrary1\bin\Debug\ClassLibrary1.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractDemo.cs" />
+    <Compile Include="ArrayDemo1.cs" />
+    <Compile Include="BoxingUnboxing.cs" />
+    <Compile Include="CompareTwoClass.cs" />
+    <Compile Include="ConflictingMethodName.cs" />
+    <Compile Include="DataTypeConversion.cs" />
+    <Compile Include="DelegateDemo.cs" />
+    <Compile Include="Demo.cs" />
+    <Compile Include="DisposeVSfinalize.cs" />
+    <Compile Include="Employee.cs" />
+    <Compile Include="Employee.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Employee.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="EnumDemo.cs" />
+    <Compile Include="EventDemo.cs" />
+    <Compile Include="ExceptionDemo.cs" />
+    <Compile Include="ExtensionMethodDemo.cs" />
+    <Compile Include="HelloWorld.cs" />
+    <Compile Include="IEnumerableDemo.cs" />
+    <Compile Include="IEnumeratorDemo.cs" />
+    <Compile Include="InheritanceApplication.cs" />
+    <Compile Include="Interface1.cs" />
+    <Compile Include="LateBindingEarlyBinding.cs" />
+    <Compile Include="LeetCode.cs" />
+    <Compile Include="ManyToManyEfSample2.cs" />
+    <Compile Include="MultiDelegate.cs" />
+    <Compile Include="Name.cs" />
+    <Compile Include="PartialClass.cs" />
+    <Compile Include="Person.cs" />
+    <Compile Include="Person.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Person.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="Person1.cs" />
+    <Compile Include="Person2.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="refVSout.cs" />
+    <Compile Include="SealedClassDemo.cs" />
+    <Compile Include="sophyTest1_1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sophyTest1_1DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="StringVsStringBuilder.cs" />
+    <Compile Include="StructDemo.cs" />
+    <Compile Include="StructurePerson.cs" />
+    <Compile Include="Student.cs" />
+    <Compile Include="TestShape.cs" />
+    <Compile Include="Voter.cs" />
+    <Compile Include="YieldReturnDemo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Employee.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Employee.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Person.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>Person.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="sophyTest1_1DataSet.xsc">
+      <DependentUpon>sophyTest1_1DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="sophyTest1_1DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>sophyTest1_1DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="sophyTest1_1DataSet.xss">
+      <DependentUpon>sophyTest1_1DataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Person.dbml.layout">
+      <DependentUpon>Person.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Employee.dbml.layout">
+      <DependentUpon>Employee.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

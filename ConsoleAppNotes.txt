@@ -1,0 +1,26 @@
+https://github.com/nationwidesy/ConsoleApp1.git
+
+Array, ArrayList, List, IEnumerable<T>:
+
+1. Array: fixed size, same data type, Length
+int[] arr = new int[5];
+for (int i=0;i<arr.Length; i++) {arr[i] = i+5;}
+
+2. ArrayList: data type is object, so need boxing and unboxing
+ArrayList arrList = new ArrayList();
+arrList.Add(6);
+arrList.Add(8);
+int sizeOfarrList = arrList.Count;
+
+3. List: same data type,  no need boxing and unboxing. If you don't know the size use this one
+List<int> arrList = new list<int>();
+list.Add(6);
+list.Add(8);
+int sizeOflist = list.Count;
+
+4. IEnumerable: interface LINQ, Loop foreach
+IEnumerable<int> reslut = from value in Enumerable.Range(0,2) select value;
+foreach (int value in result) { Console.WriteLine(value);}
+double avg = result.Average();
+List<int> list = result.ToList();
+int[] arr = result.ToArray();
